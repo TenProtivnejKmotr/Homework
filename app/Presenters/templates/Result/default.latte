@@ -1,0 +1,34 @@
+{block content}
+	<div id="container">
+		<table>
+			<tr>
+				<td class="info">Název subjektu:</td>
+				<th colspan="2" class="info">{$info["name"]}</th>
+			</tr>
+			<tr>
+				<td class="info">Sídlo firmy:</td>
+				<td colspan="2" class="info">{$info["address"]} {$info["address_number"]}, {$info["address_city"]} {$info["address_city_number"]}</td>
+			</tr>
+			<tr>
+				<td class="info">Identifikační číslo (IČO):</td>
+				<td colspan="2" class="info">{$info["ico"]}</td>
+			</tr>
+			<tr>
+				<td class="info">Daňové identifikační číslo (DIČ):</td>
+				<td class="info">{$info["dic"]}</td>
+			</tr>
+		</table>
+	</div>
+	<div id="back_btn" colspan="2">
+		<a id="back_text" n:href="Home:">&#8592; Zpět</a>
+	</div>
+	<style>
+		table {
+			padding: 60px 0;
+		}
+		td, th {
+			padding: 0 40px;
+			font-size: 25px;
+		}
+	</style>
+{/block}
